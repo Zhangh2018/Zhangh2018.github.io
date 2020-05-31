@@ -14,13 +14,11 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="单目视觉测距1、前言ADAS功能开发中，许多的功能（LKA、ACC、AEB、TLR和PD&#x2F;VD等）在完成检测识别任务后，通常需要进行距离的计算，这就需要对目标物的准确识别，这是进行测距的第一步，也是很重要的前提条件，如果无法针对目标物进行准确地识别，也就无法准确地估计这些目标物的距离。然而，不同的测距模型适用于不同的目标对象，例如车辆、行人等都在地面上，可以采用高度三角形测距模型，红绿灯、交通限速">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2019111822095835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTIzOTE5,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2020-05-24T00:46:39.000Z">
-<meta property="article:modified_time" content="2020-05-25T14:48:33.284Z">
+<meta property="article:modified_time" content="2020-05-31T15:37:56.736Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="视觉测距">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2019111822095835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTIzOTE5,size_16,color_FFFFFF,t_70">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -92,7 +90,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="单目视觉测距"><a href="#单目视觉测距" class="headerlink" title="单目视觉测距"></a>单目视觉测距</h1><h2 id="1、前言"><a href="#1、前言" class="headerlink" title="1、前言"></a>1、前言</h2><pre><code>ADAS功能开发中，许多的功能（LKA、ACC、AEB、TLR和PD/VD等）在完成检测识别任务后，通常需要进行距离的计算，这就需要对目标物的准确识别，这是进行测距的第一步，也是很重要的前提条件，如果无法针对目标物进行准确地识别，也就无法准确地估计这些目标物的距离。然而，不同的测距模型适用于不同的目标对象，例如车辆、行人等都在地面上，可以采用高度三角形测距模型，红绿灯、交通限速牌等目标是固定的，可以采用时差三角形及相似三角形测距，</code></pre><h2 id="2、高度三角形测距模型"><a href="#2、高度三角形测距模型" class="headerlink" title="2、高度三角形测距模型"></a>2、高度三角形测距模型</h2><pre><code>高度三角形测距模型有两种：1、利用消失点及光轴中心来进行目标距离的测量，2、利用相机的垂直视场角及图像的下边沿来进行测距计算，下面对两种具体的测距模型进行分析。</code></pre><h3 id="2-1-基于消失点的测距"><a href="#2-1-基于消失点的测距" class="headerlink" title="2.1 基于消失点的测距"></a>2.1 基于消失点的测距</h3><p>！<a href="Pic/0.p">figure 1</a></p>
-<p><img src="https://img-blog.csdnimg.cn/2019111822095835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI2OTIzOTE5,size_16,color_FFFFFF,t_70" alt="图1 (a)高度三角形测距示意图"></p>
 
       
     </div>
